@@ -6,64 +6,71 @@ public class ColorEntity implements Comparable<ColorEntity> {
     private int green ;
     private int blue ;
     private int rgbVal ;
+    private float h, s, b ;
+    private Integer appears ;
+    private float[] hsbValues = new float[3] ;
 
-    public Integer getAppears() {
-        return appears;
+    public ColorEntity(int red, int green, int blue){
+        this.rgbVal = new Color(red,green,blue).getRGB();
+        maintainAllColorValuesUpdated(rgbVal);
+    }
+
+    public ColorEntity(int rgbVal){
+        maintainAllColorValuesUpdated(rgbVal);
+    }
+
+    public void maintainAllColorValuesUpdated(int rgbVal) {
+        Color color = new Color(rgbVal) ;
+        this.rgbVal = rgbVal ;
+        this.red = color.getRed();
+        this.green = color.getGreen() ;
+        this.blue = color.getBlue() ;
+        Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(),hsbValues) ;
     }
 
     public void setAppears(Integer appears) {
         this.appears = appears;
     }
+    public Integer getAppears() {
+        return appears;
+    }
 
-    private Integer appears ;
     public int getRgbVal() {
         return rgbVal;
     }
-
     public void setRgbVal(int rgbVal) {
-        this.rgbVal = rgbVal;
-    }
-
-    public ColorEntity(){
-
+        maintainAllColorValuesUpdated(rgbVal);
     }
 
     public int getRed() {
         return red;
     }
-
     public void setRed(int red) {
-        this.red = red;
+        Color color = new Color(red, green,blue) ;
+        maintainAllColorValuesUpdated(color.getRGB());
     }
 
     public int getGreen() {
         return green;
     }
-
     public void setGreen(int green) {
-        this.green = green;
-    }
-
-    @Override
-    public String toString() {
-        return "ColorEntity{" +
-                "red=" + red +
-                ", green=" + green +
-                ", blue=" + blue +
-                ", rgbVal=" + rgbVal
-                +", appears="+appears+'}';
+        Color color = new Color(red, green,blue) ;
+        maintainAllColorValuesUpdated(color.getRGB());
     }
 
     public int getBlue() {
         return blue;
     }
-
     public void setBlue(int blue) {
-        this.blue = blue;
+        Color color = new Color(red, green,blue) ;
+        maintainAllColorValuesUpdated(color.getRGB());
     }
-    public ColorEntity(int rgb){
-        this.rgbVal = rgb ;
+
+    public float[] getHsbValues(){
+        return hsbValues ;
     }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -86,5 +93,15 @@ public class ColorEntity implements Comparable<ColorEntity> {
             return -1 ;
         }
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "ColorEntity Values: " +
+                "red=" + red +
+                ", green=" + green +
+                ", blue=" + blue +
+                ", rgbVal=" + rgbVal
+                + ", Hue=" +hsbValues[0] +", Saturation=" + hsbValues[1] + ", Brightness=" + hsbValues[2];
     }
 }

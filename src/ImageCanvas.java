@@ -1,10 +1,8 @@
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.util.List;
 
 public class ImageCanvas extends JFrame implements KeyListener, MouseMotionListener, ActionListener, MouseListener {
     private BufferedImage chosenImage ;
@@ -21,7 +19,8 @@ public class ImageCanvas extends JFrame implements KeyListener, MouseMotionListe
     private int currentY ;
     private Color currentRgb ;
     private int mouseStartLocationX, mouseStartLocationY ;
-    private Analyzer analyzer ;
+    private RectangleAnalyzer rectangleAnalyzer;
+    Scanner scanner ;
     public ImageCanvas(ImageChooser imageChooser) throws IOException {
         this.requestsService = new RequestsService();
         this.imageChooser = imageChooser ;
@@ -83,6 +82,7 @@ public class ImageCanvas extends JFrame implements KeyListener, MouseMotionListe
         this.getContentPane().add(rightPanel,BorderLayout.EAST);
         this.setFocusable(true);
         this.setVisible(true);
+
     }
 
     private BufferedImage resize(BufferedImage src, int targetSize) {
@@ -153,11 +153,7 @@ public class ImageCanvas extends JFrame implements KeyListener, MouseMotionListe
         currentX = mouseEvent.getX();
         currentY = mouseEvent.getY();
         currentRgb = new Color(chosenImage.getRGB(currentX,currentY)) ;
-        ColorEntity color = new ColorEntity() ;
-        color.setRed(currentRgb.getRed());
-        color.setBlue(currentRgb.getBlue());
-        color.setGreen(currentRgb.getGreen());
-        color.setRgbVal(currentRgb.getRGB());
+        ColorEntity color = new ColorEntity(currentRgb.getRGB()) ;
         Graphics g = image.getGraphics() ;
         Graphics2D g2d = (Graphics2D) g ;
         g2d.setColor(Color.red);
@@ -166,7 +162,8 @@ public class ImageCanvas extends JFrame implements KeyListener, MouseMotionListe
         image.repaint();
         if(chosenOption == JOptionPane.YES_OPTION) {
             try {
-                this.requestsService.postColor(color);
+//                this.requestsService.postColor(color);
+                scanner = new Scanner(chosenImage, currentX, currentY);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -217,9 +214,9 @@ public class ImageCanvas extends JFrame implements KeyListener, MouseMotionListe
             g2d.drawRect(lastRectangle.x, lastRectangle.y, lastRectangle.width, lastRectangle.height);
             int chosenOption = JOptionPane.showConfirmDialog(null,"Do you want to analyze the chosen rectangle?", null, JOptionPane.YES_NO_OPTION) ;
             if(chosenOption == JOptionPane.YES_OPTION){
-                this.analyzer = new Analyzer(chosenImage, lastRectangle) ;
+                this.rectangleAnalyzer = new RectangleAnalyzer(chosenImage, lastRectangle) ;
                 try {
-                    analyzer.scanRect();
+                    rectangleAnalyzer.scanRect();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

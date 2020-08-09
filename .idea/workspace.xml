@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b6fd98df-5e48-48f7-8e66-d0da8aa50565" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/MatrixCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PixelsNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Scanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagePixelsTester/Analyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagePixelsTester/ColorEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagePixelsTester/ColorEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagePixelsTester/ImageCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagePixelsTester/ImageCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ImagePixelsTester/SpectrumOfColors.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ImagePixelsTester/SpectrumOfColors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RectangleAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ColorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ColorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ImageCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpectrumOfColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpectrumOfColors.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -72,62 +84,70 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="24" key="#Project_Structure/0.0.1360.728@0.0.1360.728" timestamp="1591439738684" />
-    <state x="485" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1595700992860">
+    <state x="485" y="75" key="#com.intellij.ide.util.MemberChooser" timestamp="1596916458920">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="485" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1595700992860" />
+    <state x="485" y="75" key="#com.intellij.ide.util.MemberChooser/0.0.1360.728@0.0.1360.728" timestamp="1596916458920" />
     <state x="468" y="251" width="423" height="234" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591427916434">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="468" y="251" width="423" height="234" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1360.728@0.0.1360.728" timestamp="1591427916434" />
+    <state x="33" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596024680618">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="33" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1360.728@0.0.1360.728" timestamp="1596024680618" />
+    <state x="283" y="0" key="CommitChangelistDialog2" timestamp="1597008646738">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="283" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1597008646738" />
     <state x="372" y="108" key="FileChooserDialogImpl" timestamp="1592132535424">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="372" y="108" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1592132535424" />
-    <state width="1321" height="171" key="GridCell.Tab.0.bottom" timestamp="1595704253878">
+    <state width="1321" height="111" key="GridCell.Tab.0.bottom" timestamp="1597006130166">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="171" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1595704253878" />
-    <state width="1321" height="171" key="GridCell.Tab.0.center" timestamp="1595704253878">
+    <state width="1321" height="111" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1597006130166" />
+    <state width="1321" height="111" key="GridCell.Tab.0.center" timestamp="1597006130166">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="171" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1595704253878" />
-    <state width="1321" height="171" key="GridCell.Tab.0.left" timestamp="1595704253878">
+    <state width="1321" height="111" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1597006130166" />
+    <state width="1321" height="111" key="GridCell.Tab.0.left" timestamp="1597006130166">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="171" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1595704253878" />
-    <state width="1321" height="171" key="GridCell.Tab.0.right" timestamp="1595704253878">
+    <state width="1321" height="111" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1597006130166" />
+    <state width="1321" height="111" key="GridCell.Tab.0.right" timestamp="1597006130166">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="171" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1595704253878" />
-    <state width="1321" height="212" key="GridCell.Tab.1.bottom" timestamp="1595702792170">
+    <state width="1321" height="111" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1597006130166" />
+    <state width="1321" height="212" key="GridCell.Tab.1.bottom" timestamp="1596940973640">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="212" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1595702792170" />
-    <state width="1321" height="212" key="GridCell.Tab.1.center" timestamp="1595702792170">
+    <state width="1321" height="212" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1596940973640" />
+    <state width="1321" height="212" key="GridCell.Tab.1.center" timestamp="1596940973640">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="212" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1595702792170" />
-    <state width="1321" height="212" key="GridCell.Tab.1.left" timestamp="1595702792170">
+    <state width="1321" height="212" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1596940973640" />
+    <state width="1321" height="212" key="GridCell.Tab.1.left" timestamp="1596940973640">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="212" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1595702792170" />
-    <state width="1321" height="212" key="GridCell.Tab.1.right" timestamp="1595702792170">
+    <state width="1321" height="212" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1596940973640" />
+    <state width="1321" height="212" key="GridCell.Tab.1.right" timestamp="1596940973640">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1321" height="212" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1595702792170" />
+    <state width="1321" height="212" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1596940973640" />
     <state x="181" y="9" key="SettingsEditor" timestamp="1591438444875">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="181" y="9" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1591438444875" />
-    <state x="371" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1592315755604">
+    <state x="371" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1596876532076">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="371" y="190" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1592315755604" />
-    <state x="115" y="68" key="new project wizard" timestamp="1592132618765">
+    <state x="371" y="190" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1596876532076" />
+    <state x="115" y="0" key="new project wizard" timestamp="1596916160359">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="115" y="68" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1592132618765" />
+    <state x="115" y="0" key="new project wizard/0.0.1360.728@0.0.1360.728" timestamp="1596916160359" />
     <state x="327" y="164" width="672" height="677" key="run.anything.popup" timestamp="1591486843498">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -142,11 +162,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SpectrumOfColors.java</url>
-          <line>69</line>
+          <line>65</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Analyzer.java</url>
+          <url>file://$PROJECT_DIR$/src/RectangleAnalyzer.java</url>
           <line>23</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
